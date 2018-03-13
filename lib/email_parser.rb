@@ -4,6 +4,7 @@
 # or whitespace (' ').
 class EmailParser
   @emails = []
+  
   def initialize(list)
     
   end
