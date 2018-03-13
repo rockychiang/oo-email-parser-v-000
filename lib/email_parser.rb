@@ -6,7 +6,11 @@ class EmailParser
   @emails = []
   
   def initialize(list)
-    
+    @emails = list.split(" ").map{|email| email.chomp(",")}
+  end
+  
+  def parse
+    @emails
   end
   
 end
